@@ -13,7 +13,7 @@ var userModel = mongoose.model('users', userSchema);
 //function to init db
 var connectDb = function(){
   //mongoose.connect('mongodb://127.0.0.1/skillsquared');
-  mongoose.connect('mongodb://user:flying_fox_99>@ds111559.mlab.com:11559/meanapp');
+  mongoose.connect('mongodb://user:flying_fox_99@ds111559.mlab.com:11559/meanapp');
   var db = mongoose.connection;
   db.once('open', function(){
     console.log('Database connected');
